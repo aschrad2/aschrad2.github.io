@@ -1,0 +1,383 @@
+/*----------- Global -----------*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+
+/* Way for children to automatically clear */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+html {
+	font-family: circular std, sans-serif;
+	font-weight: 100;
+}
+body {
+	width: 60%;
+	margin: auto;
+	background-image: url(images/BG.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.blue {
+	color: #027BFF;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 400;
+	color: #17191A;
+}
+h2 {
+	font-size: 35px;
+	font-weight: 400;
+	color: #17191A;
+}
+h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: #17191A;
+}
+h6, .h6 {
+    font-size: .75rem;
+}
+p {
+	color: #8F9EA5;
+	opacity: 0.8;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/*-------- Nav --------*/
+.nav {
+	display: flex;
+	align-items: center;
+	height: 100px;
+}
+.contactMe, .navIcons {
+	flex: 1;
+}
+.navIcons {
+	text-align: right;
+}
+.navIcons a, .contactMe a, .contactMe img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.navIcons a {
+	margin-left: 40px;
+}
+.contactMe a {
+	color: #027BFF;
+	text-decoration: none;
+}
+.contactMe img {
+	margin-right: 10px;
+}
+.nav-button {
+    font-family: Montserrat,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+
+.button-transparent:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 1px solid transparent;
+    background-color: currentcolor;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+    transition-property: opacity;
+    opacity: 0;
+}
+.button:after, button:before, .button:after, .button:before {
+    box-sizing: border-box;
+}
+.button-transparent {
+    position: relative;
+    z-index: 2;
+    color: inherit;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition-duration: .1s;
+    transition-timing-function: ease-out;
+    transition-property: box-shadow;
+}
+.py2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.caps {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+button, .button {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.125rem;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
+
+/*-------- Landing --------*/
+.landing {
+	height: 90vh;
+	position: relative;
+}
+.landingWrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+ul {
+	list-style: none;
+	margin-top: 30px;
+	line-height: 30px;
+}
+.landingL {
+}
+.scroll {
+	position: absolute;
+	bottom: 120px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.faceimg {
+    border-radius: 45%;
+    width: 80%;
+}
+.fa-github-square {
+    color: #027BFF;
+    font-size: 3em;
+    text-align: center;
+}
+.fa-facebook {
+    color: #027BFF;
+    font-size: 3em;
+    text-align: center;
+}
+.fa-linkedin {
+    color: #027BFF;
+    font-size: 3em;
+    text-align: center;
+}
+.fa-envelope-square {
+    color: #027BFF;
+    font-size: 3em;
+    text-align: center;
+}
+.fa-home {
+    color: #027BFF;
+    font-size: 3em;
+    text-align: center;
+}
+.fa-briefcase {
+    color: #027BFF;
+    font-size: 1em;
+    text-align: center;
+}
+.fa-camera-retro {
+    color: #027BFF;
+    font-size: 1em;
+    text-align: center;
+}
+.fa-file {
+    color: #027BFF;
+    font-size: 1em;
+    text-align: center;
+}
+
+a:hover, a h5:hover {
+    text-decoration: none;
+    color: #007199
+}
+a {
+    text-decoration: none;
+}
+.valign-middle {
+    vertical-align: middle;
+}
+
+
+
+
+
+/*------- Skills --------*/
+.skills {
+	text-align: center;
+	margin-bottom: 20em;
+    margin-top: -100px;
+    margin-bottom: 80px;
+}
+.skills p {
+	margin-bottom: 30px;
+}
+.skills img {
+	width: 400px;
+	margin: 0 15px;
+}
+
+/*------- Work 01 --------*/
+.project-head {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.project-title {
+    text-align: left;
+    float: center;
+    margin-bottom: 5px;
+}
+
+.work {
+	width: 100%;
+	position: relative;
+	margin-bottom: 5em;
+}
+.work > .workText {
+	position: absolute;
+	top: 85px;
+}
+.work > .workText > .underline {
+	display: block;
+	background-color: #027BFF;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+}
+.work > .workImg {
+	width: 65%;
+	float: right;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+.work ul {
+	position: absolute;
+	bottom: 0;
+	right: 86%;
+}
+.work ul li {
+	margin-top: 20px;
+}
+
+/*------- Work 02 --------*/
+.work2 {
+	width: 100%;
+	position: relative;
+	margin-bottom: 5em;
+}
+.work2 > .workText {
+	position: absolute;
+	top: 85;
+}
+.work2 > .workText > .underline {
+	display: block;
+	background-color: #027BFF;
+	height: 3px;
+	width: 61px;
+	margin-top: 5px;
+}
+.work2 > .workImg {
+	width: 65%;
+	float: right;
+	-webkit-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+.work2 ul {
+	position: absolute;
+	bottom: 0;
+	right: 86%;
+}
+.work2 ul li {
+	margin-top: 20px;
+}
+
+/*------- Work 01 and 02 --------*/
+.work a, .work2 a {
+	text-decoration: none;
+	color: #17191A;
+}
+
+/*------- More Projects --------*/
+.more-projects {
+	background-image: url(images/Dribbble_Blue_Large.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 320px;
+	padding-bottom: 7em;
+	text-align: center;
+    color: #027BFF;
+	text-decoration: none;
+}
+.underlineSmall {
+	display: block;
+	height: 3px;
+	width: 41px;
+	margin: 5px auto 0 auto;
+	background-color: #027BFF;
+}
+
+
+/*------- More Projects --------*/
+.footer {
+    display: block;
+}
+
+.sticky footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    letter-spacing: .01rem;
+    line-height: 1.75rem;
+}
+h6, .h6 {
+    font-size: .75rem;
+}
+.gray, .mid-gray {
+    color: #aaa;
+}
+.border-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(0,0,0,.125);
+}
+
+.px2 {
+    text-align: right;
+    vertical-align: middle;
+}
+.px3 {
+    text-align: center;
+    vertical-align: middle;
+}
+
