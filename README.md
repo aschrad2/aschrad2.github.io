@@ -1,4 +1,4 @@
-# aschrad2.github.io
+# https://aschrad2.github.io/
 
 #### My hosted portfolio website on Github pages, February 6th, 2019
 
